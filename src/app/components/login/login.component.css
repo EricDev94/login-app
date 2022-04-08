@@ -1,0 +1,46 @@
+.body{
+    background-image: url("../../../assets/img/fondo.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    
+}
+
+.login {
+    width: 50%;
+    height: 57%;
+    max-width: 330px;
+    text-align: center;
+    border-style: solid;
+    border-color: #3f51b5;
+    border: white 8px inset;
+    background-color: #e3f8fa;
+    border-radius: 1.5rem;
+    min-height: 430px;
+}
+
+button {
+    width: 61%;
+}
+
+img {
+    border-style:outset;
+    border-radius: 0.5rem;
+    border-color: #ffffff;
+    background-color: #ffffff;
+    border-color: #7398c3;
+    border: white 8px inset;
+    margin-top: 20%;
+    padding: 1rem;
+}
+
+
+.spinner {
+    margin-left: 42%;
+}
+
+.spin {
+    margin-top: 65%;
+}
