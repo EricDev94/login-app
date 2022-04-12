@@ -14,7 +14,11 @@
                 <mat-label>Contraseña</mat-label>
                 <input type="password" matInput autocomplete="off" formControlName="password">
             </mat-form-field><br>
-            <button type="submit" mat-raised-button color="primary" [disabled]="form.invalid">Acceder</button>
+            <button class="acceder" type="submit" mat-raised-button color="primary" [disabled]="form.invalid">Acceder</button>
+        </form>
+        <br>
+        <form *ngIf="!loading" [formGroup]="form" (ngSubmit)="registroUsuario()"> 
+            <button class="registro" type="submit" mat-raised-button color="secondary">Registrarse</button>
         </form>
     </div>
 </div>

@@ -14,15 +14,30 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
 import {matSnackBarAnimations, MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {matTabsAnimations, MatTabsModule} from '@angular/material/tabs';
+import {MatIconModule} from '@angular/material/icon';
+
 
 //Componente
 import { LoginComponent } from './components/login/login.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { NavbarComponent } from './components/dashboard/navbar/navbar.component';
+
+//Http
+import { HttpClientModule } from '@angular/common/http';
+import { RegistroComponent } from './components/registro/registro.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    DashboardComponent,
+    NavbarComponent,
+    RegistroComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -34,7 +49,11 @@ import { LoginComponent } from './components/login/login.component';
     MatInputModule,
     ReactiveFormsModule,
     MatSnackBarModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatToolbarModule,
+    MatTabsModule,
+    MatIconModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
